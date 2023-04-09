@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 10;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 500px;
+    background-color: #c7c9cb;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 20px;
+    
+  }
+  .popup-content form input{
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px 0px;
+}
+  
+  #close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.iconss {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  img .icimg {
+    width: 51px;
+    display: block;
+    margin-top: 16px;
+    
+  }
+  .iconss img{
+    margin-top: 10px;
+  }
+h1{
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: underline 2px rgb(207, 19, 19);
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.navbar{
+    background-color: #010101;
+}
+.navbar .navbar-nav .nav-item .nav-link
+{
+    color: #fff;
+    text-decoration: none;
+    font: 20px;
+    margin: 20px 10px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.navbar .navbar-nav .nav-item .nav-link:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #4e4c4c;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover:before
+{
+    height: 100%;
+}
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: #fff !important;
+}
+
+.banner-section .form {
+    height: 364px;
+    width: 309px;
+    position: absolute;
+    top: 200px;
+    left: 75%;
+    background: #e8e8e8;
+    border-radius: 10px;
+    padding: 45px 20px;
+    border: 1px solid gray;
+}
+.form input{
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: 5px 0px;
+}
+.form label{
+    color: black;
+}
+.overview-section .col-md-6 img{
+ height: 650px;
+}
+.overview-section .col-md-6 p{
+    color: grey;
+}
+.price .col-md-12{
+    border: 2px solid coral;
+    padding: 10px;
+}
+#price-list img {
+    height: 840px;
+    width: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.floor-plan .col-md-6{
+    margin: 20px 5px;
+}
+.floor-plan .col-md-6 p{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px ;
+    background-color: chocolate;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Amenities .text {
+    position: relative;
+    /* margin: 14px; */
+    z-index: 2;
+    top: -27px;
+    /* left: 30px; */
+    background: orangered;
+    color: white;
+    padding: 0px 10px;
+}
+
+.Amenities .col-md-3 {
+    /* margin-bottom: 5px; */
+        background: #fff;
+        border-top-right-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        position: relative;
+        box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+        transition: all 0.3s ease-out;
+        text-decoration: none;
+}
+
+.Amenities .col-md-3:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+      0 24px 46px var(--box-shadow-color);
+  }
+  
+  .Amenities .col-md-3:hover .overlay {
+    transform: scale(4) translateZ(0);
+  }
+
+.gallary .col-md-4 {
+    margin-bottom: 15px;
+}
+
+.gallary .col-md-4 img {
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.gallary .col-md-4 img:hover{
+    transform: scale(0.9);
+}
+.loction .col-md-6 .location-line li{
+    line-height: 40px;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+.contact {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+.contact .col-md-8 input{
+ width: 95%;
+ margin: 10px 0px;
+ padding: 10px 20px;
+ /* border-radius: 5px; */
+ outline: none;
+}
+.contact .col-md-8 form textarea{
+    width: 95%;
+    padding: 10px 20px;
+}
+.footer{
+    background-color: rgb(31 36 76);
+    /* margin-top: 20px; */
+    /* height: 180px; */
+}
+
+.footer i{
+    font-size: 20px;
+
+}
+.footer i a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 46px;
+    right: 7px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #c23333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+}
+
+.sticky {
+    
+    /* background-color: rgb(240 241 244 / 95%) !important; */
+    background-color: #290004;
+    /* background: linear-gradient(1deg, #4103ff, #cbb8b8); */
+    /* background: linear-gradient(1deg, #ffffff, #ebe8e8); */
+    /* position: fixed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    top: 0px;
+    width: 100%; */
+    padding: 10px;
+    z-index: 5;
+    transition: all 0.5s ease-out;
+    
+   }
+
+   @media only screen and (max-width: 600px) {
+   .overview-section .col-md-6 img {
+        height: 400px;
+    }
+.navbar .navbar-brand{
+ padding: 0px !important;
+}
+#price-list img {
+    height: auto;
+    max-width: 100%;
+}
+.mobile{
+    display: block !important;
+}
+
+    .modal-content {
+        position: relative;
+        top:270px;
+        left: 35px;
+        display: flex;
+        flex-direction: column;
+        width: 90% !important;
+        pointer-events: auto;
+        background-color: #198754 !important;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 0.3rem;
+        outline: 0;
+    
+}
+.modal-backdrop {
+   position: relative !important;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+}
+.modal-body form input{
+    
+        padding: 1px 10px;
+        border-radius: 5px;
+        margin: 3px 0px;
+        width: 93%;
+        outline: none;
+    
+}
+.banner-section .form{
+    display: none;
+}
+}
