@@ -31,7 +31,6 @@
     text-align: center;
     border-radius: 10px;
     padding: 15px 20px;
-    
   }
   .popup-content form input{
     padding: 5px;
@@ -68,7 +67,7 @@
 h1{
     font-weight: 600;
     letter-spacing: 1px;
-    text-decoration: underline 2px rgb(207, 19, 19);
+    /* text-decoration: underline 2px rgb(207, 19, 19); */
     margin: 20px 0px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
